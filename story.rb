@@ -12,9 +12,10 @@ def author=(author)
 
 end
 
-attr_reader :category
 
-def author=(category)
+attr_accessor :category 
+
+def category=(category)
     raise AssociationTypeError, "#{category.class} recieved, category expected." if !category.is_a?(category)
         @category = category
         category.add_story(self) unless category.stories.include?(self)
