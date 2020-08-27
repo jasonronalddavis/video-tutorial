@@ -2,9 +2,9 @@ describe Category do
 
 
     let(:category){Category.new.tap{|c| c.name = "Fiction"}}
+    let(:story){Story.new.tap{|s| s.name = "The old man and the sea"}}
 
 
-    
     it "has a name" do
         #setup
         #expectation

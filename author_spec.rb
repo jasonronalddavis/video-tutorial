@@ -1,8 +1,9 @@
 describe Author do
 
 
-    let(:story){Story.new.tap{|s| s.name = "The old man and the sea"}}
+    
     let(:author){Author.new.tap{|a| a.name = "Ernest Hemingway"}}
+    let(:story){Story.new.tap{|s| s.name = "The old man and the sea"}}
     
     it "has a name" do
         expect(author.name).to eq("Ernest Hemingway")
